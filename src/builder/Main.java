@@ -1,9 +1,16 @@
 package builder;
 
+import builder.fluent.builder.with.recursiveGenerics.EmployeeBuilder;
+import builder.fluent.builder.with.recursiveGenerics.Person;
+
 public class Main {
     public static void main(String[] args) {
-        HtmlBuilder builder = new HtmlBuilder("url");
-        builder.addChild("li", "Hello").addChild("li", "World");
-        System.out.println(builder);
+        EmployeeBuilder employeeBuilder = new EmployeeBuilder();
+        Person moh = employeeBuilder
+            .withName("Moh")
+            .worksAt("Developer")
+            .build();
+
+        System.out.println(moh);
     }
 }
