@@ -1,5 +1,8 @@
 package prototype;
 
+import prototype.clone.Address;
+import prototype.clone.Person;
+
 public class Demo {
     public static void main(String[] args) {
         Person john = new Person(new String[]{"John", "Smith"}, new Address("London Road", 123));

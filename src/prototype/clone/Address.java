@@ -1,4 +1,4 @@
-package prototype;
+package prototype.clone;
 
 public class Address implements Cloneable {
     public String streetName;
