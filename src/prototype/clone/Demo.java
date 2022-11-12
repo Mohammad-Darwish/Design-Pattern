@@ -1,7 +1,4 @@
-package prototype;
-
-import prototype.clone.Address;
-import prototype.clone.Person;
+package prototype.clone;
 
 public class Demo {
     public static void main(String[] args) {
