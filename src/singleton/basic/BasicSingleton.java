@@ -1,6 +1,8 @@
 package singleton.basic;
 
-public class BasicSingleton {
+import java.io.Serializable;
+
+public class BasicSingleton implements Serializable {
     private BasicSingleton() {
     }
 
@@ -20,8 +22,8 @@ public class BasicSingleton {
         this.value = value;
     }
 
-    @Override
-    public String toString() {
-        return "BasicSingleton value is " + this.value;
+    // the fix of serialization problem, without it serialize and deserialize create new objects
+    protected Object readResolve() {
+        return INSTANCE;
     }
 }
