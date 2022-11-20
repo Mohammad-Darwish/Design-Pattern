@@ -1,5 +1,5 @@
 package structural.bridge;
 
-public interface Renderer {
+interface Renderer {
     void renderCircle(float radius);
 }

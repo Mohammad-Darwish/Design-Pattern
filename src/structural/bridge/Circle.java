@@ -1,8 +1,11 @@
 package structural.bridge;
 
-public class Circle extends Shape {
+import com.google.inject.Inject;
+
+class Circle extends Shape {
     public float radius;
 
+    @Inject
     public Circle(Renderer renderer) {
         super(renderer);
     }
