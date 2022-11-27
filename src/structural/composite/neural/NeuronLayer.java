@@ -1,0 +1,6 @@
+package structural.composite.neural;
+
+import java.util.ArrayList;
+
+public class NeuronLayer extends ArrayList<Neuron> implements SomeNeuron {
+}
